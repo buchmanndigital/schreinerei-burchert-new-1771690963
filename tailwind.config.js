@@ -18,6 +18,10 @@ module.exports = {
           800: '#52382a',
           900: '#432f25',
         },
+        brand: {
+          yellow: '#F5A623', // Logo Yellow/Orange
+          dark: '#2D3748',   // Logo Grey/Black
+        }
       },
       fontFamily: {
         sans: ['var(--font-inter)', 'sans-serif'],
