@@ -1,5 +1,5 @@
 import React from 'react';
-import { Phone, Mail, MapPin, Hammer, Home, Sparkles, ChevronRight, Menu, CheckCircle2 } from 'lucide-react';
+import { Phone, Mail, MapPin, Hammer, Home, Sparkles, ChevronRight, Menu, CheckCircle2, Smartphone } from 'lucide-react';
 
 export default function Page() {
   return (
@@ -10,8 +10,8 @@ export default function Page() {
         <div className="container mx-auto px-6 py-3 flex justify-between items-center">
           <div className="flex items-center gap-4">
             {/* Logo Icon */}
-            <div className="h-12 w-12 relative overflow-hidden rounded-md border border-wood-100 shadow-sm">
-              <img src="/logo-icon.png" alt="Schreinerei Burchert Logo" className="w-full h-full object-contain p-1" />
+            <div className="h-12 w-12 relative overflow-hidden">
+              <img src="/logo-icon.png" alt="Schreinerei Burchert Logo" className="w-full h-full object-contain" />
             </div>
             {/* Logo Text */}
             <div className="flex flex-col leading-none">
@@ -69,7 +69,7 @@ export default function Page() {
       {/* Philosophie Section */}
       <section id="philosophie" className="py-24 bg-wood-50 relative overflow-hidden">
         {/* Decorative Logo Watermark */}
-        <img src="/logo-abstract.png" className="absolute -left-20 top-20 w-[500px] opacity-[0.03] rotate-12 pointer-events-none mix-blend-multiply" />
+        <img src="/logo-icon.png" className="absolute -left-24 top-24 w-[500px] opacity-[0.03] rotate-12 pointer-events-none mix-blend-multiply grayscale" />
 
         <div className="container mx-auto px-6 max-w-6xl relative z-10">
           <div className="grid md:grid-cols-2 gap-16 items-center">
@@ -193,7 +193,17 @@ export default function Page() {
                   </div>
                   <div>
                     <p className="text-sm text-wood-400 uppercase tracking-wider font-semibold">Rufen Sie uns an</p>
-                    <p className="text-2xl font-bold font-mono">+49 (0) 8321 123456</p>
+                    <p className="text-2xl font-bold font-mono">08384 – 392</p>
+                  </div>
+                </div>
+
+                <div className="flex items-center gap-6 group p-4 rounded-xl hover:bg-white/5 transition border border-transparent hover:border-white/10">
+                  <div className="bg-brand-yellow p-4 rounded-full shadow-lg group-hover:scale-110 transition">
+                    <Smartphone size={28} className="text-wood-900" />
+                  </div>
+                  <div>
+                    <p className="text-sm text-wood-400 uppercase tracking-wider font-semibold">Mobil</p>
+                    <p className="text-2xl font-bold font-mono">0175 – 5 248 874</p>
                   </div>
                 </div>
                 
@@ -204,6 +214,16 @@ export default function Page() {
                   <div>
                     <p className="text-sm text-wood-400 uppercase tracking-wider font-semibold">Schreiben Sie uns</p>
                     <p className="text-2xl font-bold">info@schreinerei-allgaeu.de</p>
+                  </div>
+                </div>
+
+                <div className="flex items-center gap-6 group p-4 rounded-xl hover:bg-white/5 transition border border-transparent hover:border-white/10">
+                  <div className="bg-brand-yellow p-4 rounded-full shadow-lg group-hover:scale-110 transition">
+                    <MapPin size={28} className="text-wood-900" />
+                  </div>
+                  <div>
+                    <p className="text-sm text-wood-400 uppercase tracking-wider font-semibold">Besuchen Sie uns</p>
+                    <p className="text-xl font-bold">Dorfstraße 19, 88171 Ellhofen</p>
                   </div>
                 </div>
               </div>
@@ -239,16 +259,20 @@ export default function Page() {
           <div className="flex flex-col md:flex-row justify-between items-start gap-12">
             <div>
               <div className="flex items-center gap-3 mb-4">
-                <div className="h-10 w-10 relative overflow-hidden rounded bg-white/5 border border-white/10 p-1">
-                  <img src="/logo-icon.png" className="w-full h-full object-contain opacity-80" />
+                <div className="h-10 w-10 relative overflow-hidden">
+                  <img src="/logo-icon.png" alt="Logo" className="w-full h-full object-contain opacity-90" />
                 </div>
                 <div className="font-bold text-xl text-white tracking-tight leading-none">
                   SCHREINEREI <br /><span className="text-brand-yellow">BURCHERT</span>
                 </div>
               </div>
-              <p className="max-w-xs text-wood-500">
+              <p className="max-w-xs text-wood-500 mb-4">
                 Ihr Schreinermeister Heinrich Burchert.<br/>
                 Qualität und Tradition aus dem Allgäu.
+              </p>
+              <p className="text-sm text-wood-600">
+                Dorfstraße 19<br />
+                88171 Ellhofen im Allgäu
               </p>
             </div>
             
